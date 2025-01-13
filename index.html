@@ -1,0 +1,54 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <h1 id="title">CP-X Registration Form</h1>
+   <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <p id="description">Please fill up this registration form in order to enroll into competitive programming bootcamp!</p>
+   <form id="survey-form">
+      <label for="name" id="name-label">Name<br><input id="name" type="text" placeholder="Enter your name " required></br></label>
+      <label for="email" id="email-label" >Email<br><input id="email" type="email" required placeholder="Enter your Email "></br></label>
+      <label for="number" id="number-label">Age<br><input min=13 max=100 id="number"         type="number" placeholder="Age" required></br></label> <br>
+       
+      <label for="dropdown">Choose your rate</label>
+        <select id="dropdown" >
+          <option value="800-1200">800-1200</option>
+          <option value="1200-1400">1200-1500</option>
+          <option value="1400-1600">1400-1600</option>
+          <option value="1600-1900">1600-1900</option>
+      </select>
+       <br></br>
+      <label>How did you hear about us?</label>
+      <br></br>
+        <label>Facebook<input type="radio" id="hear" name="option" value="Facebook" checked  >
+        <label>Youtube<input type="radio" id="hear" name="option" value="Youtube">
+        <label>Other<input type="radio" id="hear" name="option" value="Other">
+      <br></br>
+      <label>What topics would you like to see in the CP-X bootcamp?</label>
+       <br></br>
+      <div class="courses">
+  <label><input type="checkbox" value="DP"> Dynamic Programming</label>
+  <label><input type="checkbox" value="IMP"> Implementation</label>
+  <label><input type="checkbox" value="Dfs"> DFS & BFS & Dijkstra</label>
+  <label><input type="checkbox" value="bs"> Binary Search & Ternary Search</label>
+  <label><input type="checkbox" value="nth"> Number Theory</label>
+  <label><input type="checkbox" value="st"> Segment Tree</label>
+  <label><input type="checkbox" value="tp"> Two Pointers</label>
+</div>
+<br>
+  <label class="sug">Any suggestions?</label><br>
+  <textarea id="suggestions"></textarea><br>
+  <br>
+  <input id="submit" type="submit">
+
+
+
+
+
+ </form>
+   
+  </body>
+
+
+</html>
